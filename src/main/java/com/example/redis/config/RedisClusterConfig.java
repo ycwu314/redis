@@ -32,15 +32,6 @@ public class RedisClusterConfig {
      * }
      * </pre>
      */
-    @Bean
-    public RedisConnectionFactory redisConnectionFactory() {
-        JedisConnectionFactory factory = new JedisConnectionFactory(
-            new RedisClusterConfiguration(redisProperties.getCluster().getNodes()));
-        JedisPoolConfig jedisPoolConfig = new JedisPoolConfig();
-        // TODO set config
-        return factory;
-    }
-
 
     @Bean
     @Autowired
