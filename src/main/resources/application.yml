@@ -7,5 +7,6 @@ spring:
             - 192.168.212.26:7002
       pool:
         max-active: 20
+      host: 127.0.0.1
 
 
